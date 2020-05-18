@@ -1,0 +1,538 @@
+/*Default Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+input[type=submit],
+input[type=text],
+input[type=email],
+textarea {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.container {
+    max-width: 1419px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear {
+    clear: both;
+}
+
+/*CABEÇALHO*/
+header {
+    background-color: #5E3EA1;
+    padding: 32px 0;
+}
+
+header .header-logo {
+    width: 10%;
+    float: left;
+}
+
+header .header-desktop-menu {
+    width: 90%;
+    float: right;
+    position: relative;
+
+}
+
+header .header-desktop-menu nav {
+    position: absolute;
+    right: 25px;
+    top: -2px;
+}
+
+header .header-desktop-menu nav ul {
+    list-style-type: none;
+}
+
+header .header-desktop-menu nav ul li {
+    display: inline-block;
+    padding: 0 24px;
+}
+
+header .header-desktop-menu nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: helvetica;
+    font-size: 14px;
+}
+
+header .header-desktop-menu nav ul li a:hover {
+    color: #a996c7;
+}
+
+header .header-desktop-menu nav ul li.enter-link {
+    background-color: white;
+    border-radius: 30px;
+    padding: 7px 19px;
+    margin: 0 15px;
+    color: #5E3EA1;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+header .header-desktop-menu nav ul li.sign-link {
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 1px 19px 5px 19px;
+}
+
+header .header-desktop-menu nav ul li.sign-link a {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+header .header-desktop-menu nav ul li.sign-link a:hover {
+    color: white;
+}
+
+.header-mobile {
+    display: none;
+    background-color: #4C3282;
+}
+
+.header-mobile .container {
+    text-align: center;
+}
+
+.header-mobile .enter-link {
+    background-color: white;
+    border-radius: 30px;
+    padding: 7px 19px;
+    max-width: 77px;
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #5E3EA1;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.header-mobile .sign-link {
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 1px 19px 5px 19px;
+    max-width: 148px;
+    display: inline-block;
+}
+
+.header-mobile .sign-link a {
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: white;
+}
+
+.mobile-menu {
+    display: none;
+    background-color: #EEEEEE;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.mobile-menu ul {
+    list-style-type: none;
+}
+
+.mobile-menu ul li {
+    padding: 15px 0;
+}
+
+.mobile-menu ul li a {
+    font-size: 19px;
+    color: #5e3ea1;
+    text-decoration: none;
+}
+
+.mobile-menu ul li a:hover {
+    color: #A996C9;
+}
+
+header .header-desktop-menu i {
+    color: white;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+.box-form-wraper {
+    width: 270px;
+    position: absolute;
+    right: 68px;
+    top: 38px;
+    display: none;
+}
+
+.box-form-wraper .box-form-dropup-arrow {
+    position: absolute;
+    top: -15px;
+    right: 135px;
+    background-image: url(../assets/drop-up-arrow.png);
+    background-size: 100% 100%;
+    width: 20px;
+    height: 20px;
+}
+
+.box-form-wraper .box-form {
+    background-color: #a996c7;
+    padding: 15px;
+}
+
+.box-form-wraper .box-form form .field-group .user-icon {
+    background-color: #D8D8D8;
+    float: left;
+    background-image: url(../assets/user-form.png);
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 51px;
+    height: 43px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.box-form-wraper .box-form form .field-group input[type="email"] {
+    float: left;
+    width: calc(100% - 51px);
+    height: 43px;
+    padding-left: 8px;
+    background-color: white;
+    border: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.box-form-wraper .box-form form .field-group .password-icon {
+    float: left;
+    background-color: #D8D8D8;
+    background-image: url(../assets/pass-form.png);
+    background-size: 14px 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 51px;
+    height: 43px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.box-form-wraper .box-form form .field-group input[type="password"] {
+    float: left;
+    width: calc(100% - 102px);
+    height: 43px;
+    padding-left: 8px;
+    background: white;
+    border: 0;
+}
+
+.box-form-wraper .box-form form .field-group input[type="email"]:focus, 
+.box-form-wraper .box-form form .field-group input[type="password"]:focus {
+    outline: 0;
+}
+
+.box-form-wraper .box-form form .field-group input[type="submit"] {
+    float: left;
+    background-color: #e7426b;
+    width: 51px;
+    height: 43px;
+    background-image: url(../assets/arrow-form.png);
+    background-size: 7px 13px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 0;
+    cursor: pointer;    
+}
+
+.box-form-wraper .box-form p {
+    color: white;
+    text-decoration: underline;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 6px 0;
+}
+
+.header-mobile .enter-link .box-form-wraper .box-form p {
+    text-transform: none;
+}
+/*FIM DA ÁREA DO CABEÇALHO*/
+
+/*CHAMADA PARA LOGIN*/
+.login-cta-area {
+    padding: 49px 0;
+    background-color: #4C3282;
+    text-align: center;
+}
+
+.login-cta-area .login-call {
+    margin-top: 10px;
+}
+
+.login-cta-area h2 {
+    color: white;
+    font-weight: 700;
+}
+
+.login-cta-area b {
+    color: #E7426B;
+}
+/*FIM DA CHAMADA PARA LOGIN*/
+
+/*FORMULÁRIO DE ACESSO À PLATAFORMA*/
+section.login-form {
+    padding: 70px 0;
+}
+
+section.login-form .container {
+    max-width: 700px;
+}
+
+section.login-form form {
+    max-width: 650px;
+}
+
+section.login-form p {
+    color: #847586;
+}
+
+section.login-form form .group-field p {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px 0 15px 0;
+}
+
+section.login-form form .group-field .email-icon {
+    background-image: url(../assets/mail-cadastro.png);
+    background-size: 21px 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #D8D8D8;
+    height: 54px;
+    width: 51px;
+    float: left;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+section.login-form form .group-field .key-icon {
+    background-image: url(../assets/pass-form.png);
+    background-size: 21px 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #D8D8D8;
+    height: 54px;
+    width: 51px;
+    float: left;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+section.login-form form .group-field input[type="email"], section.login-form form .group-field input[type="password"] {
+    width: calc(100% - 51px);
+    background-color: white;
+    float: left;
+    padding-left: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: 54px;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    color: #444;
+}
+
+section.login-form form .group-field input[type="email"]:focus, section.login-form form .group-field input[type="password"]:focus {
+    outline: 0;
+}
+
+section.login-form form .group-action {
+    margin-top: 30px;
+}
+
+section.login-form form .group-action input[type="submit"] {
+    float: left;
+    background-color: #e7426b;
+    width: 142px;
+    height: 53px;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 100px;
+}
+
+section.login-form form .group-action input[type="submit"]:focus {
+    outline: 0;
+}
+
+section.login-form form .group-action p {
+    float: right;
+    color: #8D8D8D;
+    text-decoration: underline;
+    margin-top: 15px;
+    cursor: pointer;
+}
+/*FIM DO FORMULÁRIO DE ACESSO À PLATAFORMA*/
+
+/*SOBRE E ATENDIMENTO AO CLIENTE*/
+section.aboutus {
+    padding: 60px 0;
+    background-color: #4C3282;
+    color: white;
+}
+
+section.aboutus .about-company {
+    float: left;
+    width: 50%;
+}
+
+section.aboutus .about-company h2, section.aboutus .contactus h2 {
+    text-align: center;
+}
+
+section.aboutus .about-company p {
+    font-weight: lighter;
+    margin-top: 15px;
+    max-width: 80%;
+}
+
+section.aboutus .about-company .social-media {
+    margin-top: 30px;
+}
+
+section.aboutus .about-company .social-media a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+section.aboutus .contactus {
+    float: right;
+    width: 50%;
+}
+
+section.aboutus .contactus-group {
+    text-align: center;
+    margin-top: 10px;
+}
+
+section.aboutus .contactus-group .contact-mail {
+    width: 20px;
+    height: 15px;
+    background-image: url('../assets/icon_mail.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+section.aboutus .contactus-group b {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+section.aboutus .contactus-group p {
+    font-weight: lighter;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+section.aboutus .contactus-group .contact-phone {
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/icon_tel.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+section.aboutus .contactus-group .contact-clock {
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/icon_clock.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+/*FIM DO SOBRE E ATENDIMENTO AO CLIENTE*/
+
+footer {
+    padding: 20px 0;
+    background-color: #3E2A68;
+    text-align: center;
+}
+
+footer img {
+    width: 120px;
+}
+
+@media screen and (max-width: 580px) {
+    section.login-form form .group-action input[type="submit"], section.login-form form .group-action p {
+        float: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    section.aboutus {
+        padding: 100px 0;
+    }
+
+    section.aboutus .about-company, section.aboutus .contactus {
+        float: none;
+        width: 100%;
+    }
+
+    section.aboutus .about-company p {
+        max-width: 100%;
+    }
+
+    section.aboutus .contactus {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header-mobile {
+        display: block;
+    }
+
+    header .header-desktop-menu nav {
+        display: none;
+    }
+
+    header .header-desktop-menu i {
+        display: block;
+        position: absolute;
+        right: 40px;
+        top: -5px;
+    }
+
+    .header-mobile .enter-link .box-form-wraper {
+        position: absolute;
+        right: -105px;
+        top: 37px;
+        display: none;
+    }
+}
